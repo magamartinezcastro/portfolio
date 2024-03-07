@@ -13,6 +13,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa";
+import { container } from "./lib/classes";
 
 const inter = Inter({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
 
@@ -23,12 +24,14 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname()
   const active = "text-[#ffbd59]"
-  const container = "sm:max-w-[420px] md:max-w-[480px] lg:max-w-[640px] xl:max-w-[800px] mx-auto"
 
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <div className="">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={`${inter.className} bg-white min-w-[340px]`}>
+        <div className="text-white">
           <div className="px-[39px] text-[8px] md:text-[12px] bg-[#d9d9d9]">
             <div className={`flex justify-between items-center h-[75px] md:h-[92px] ${container}`}>
               <Image 
@@ -37,7 +40,7 @@ export default function RootLayout({
                 width={1313}
                 height={1313}
                 className={`w-[60px] md:w-[80px]`}/>
-              <div className={`flex items-center gap-3 text-black`}>
+              <div className={`flex items-center flex-wrap justify-end gap-3 text-black`}>
                 <div className="flex items-center gap-1">
                 <MdOutlineEmail fill="black" size="10px" className="md:hidden"/>
                 <MdOutlineEmail fill="black" size="12px" className="hidden md:block"/>
@@ -52,7 +55,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="px-[39px] text-[12px] md:text-[16px] bg-[#3e3d3d]">
-            <div className={`flex justify-between items-center h-[53px] ${container}`}>
+            <div className={`flex justify-between items-center xs:h-[53px] py-[10px] xs:py-0 gap-3 ${container}`}>
               <Link className={`font-extrabold link ${pathname === '/' ? active : ''}`} href="/">
                 PORTFOLIO
               </Link>
@@ -66,7 +69,7 @@ export default function RootLayout({
           </div>
         </div>
         {children}
-        <div className="bg-[#3d3d3d] px-[39px] py-[20px] md:pt-[40px]">
+        <div className="bg-[#3d3d3d] px-[39px] py-[20px] md:pt-[40px] text-white">
           <div className={container}>
             <div className="flex flex-wrap justify-between gap-3 text-[8px] md:text-[12px]">
               <div className="flex flex-col gap-2">
@@ -134,7 +137,7 @@ export default function RootLayout({
                 </a>
               </div>
             </div>
-            <div className="text-[10px] text-right">
+            <div className="text-[6px] md:text-[10px] text-right">
               <p>Made with Figma</p>
               <p>gastonmartinezcastro@gmail.com</p>
             </div>
