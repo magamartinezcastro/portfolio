@@ -1,7 +1,6 @@
 'use client'
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
@@ -14,8 +13,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa";
 import { container } from "./lib/classes";
+import { inter } from "./lib/fonts";
 
-const inter = Inter({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -24,22 +23,25 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname()
   const active = "text-[#ffbd59]"
+  const navigation = (href : string) => `font-extrabold link hover:text-[#ffbd59] transition-all duration-300 ${pathname === href ? active : ''}`
 
   return (
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${inter.className} bg-white min-w-[340px]`}>
+      <body className={`${inter.className} bg-white min-w-[340px] cursor-default`}>
         <div className="text-white">
           <div className="px-[39px] text-[8px] md:text-[12px] bg-[#d9d9d9]">
             <div className={`flex justify-between items-center h-[75px] md:h-[92px] ${container}`}>
-              <Image 
-                src="/logo_v2.png"
-                alt="Logo MAGA"
-                width={1313}
-                height={1313}
-                className={`w-[60px] md:w-[80px]`}/>
+              <Link href="/">
+                <Image 
+                  src="/logo_v2.png"
+                  alt="Logo MAGA"
+                  width={1313}
+                  height={1313}
+                  className={`hover:-rotate-6 transition-all duration-300 w-[60px] md:w-[80px]`}/>
+              </Link>
               <div className={`flex items-center flex-wrap justify-end gap-3 text-black`}>
                 <div className="flex items-center gap-1">
                 <MdOutlineEmail fill="black" size="10px" className="md:hidden"/>
@@ -56,13 +58,13 @@ export default function RootLayout({
           </div>
           <div className="px-[39px] text-[12px] md:text-[16px] bg-[#3e3d3d]">
             <div className={`flex justify-between items-center xs:h-[53px] py-[10px] xs:py-0 gap-3 ${container}`}>
-              <Link className={`font-extrabold link ${pathname === '/' ? active : ''}`} href="/">
+              <Link className={navigation("/")} href="/">
                 PORTFOLIO
               </Link>
-              <Link className={`font-extrabold link ${pathname === '/about' ? active : ''}`} href="/about">
+              <Link className={navigation("/about")} href="/about">
                 SOBRE MI
               </Link>
-              <Link className={`font-extrabold link ${pathname === '/contact' ? active : ''}`} href="/contact">
+              <Link className={navigation("/contact")} href="/contact">
                 CONTACTO
               </Link>
             </div>
@@ -117,13 +119,13 @@ export default function RootLayout({
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-[12px] md:text-[20px]  font-bold leading-6">Navegacion</p>
-                <Link className={`font-bold link ${pathname === '/' ? active : ''}`} href="/">
+                <Link className={navigation("/")} href="/">
                   PORTFOLIO
                 </Link>
-                <Link className={`font-bold link ${pathname === '/about' ? active : ''}`} href="/about">
+                <Link className={navigation("/about")} href="/about">
                   SOBRE MI
                 </Link>
-                <Link className={`font-bold link ${pathname === '/contact' ? active : ''}`} href="/contact">
+                <Link className={navigation("/contact")} href="/contact">
                   CONTACTO
                 </Link>
               </div>

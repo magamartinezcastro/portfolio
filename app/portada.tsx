@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { button, container, titulo } from "./lib/classes";
 import { catamaran } from "./lib/fonts";
 
@@ -27,7 +28,12 @@ export default function Portada() {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <button className={button}>Sobre Mí</button>
+            <Link
+              href="/about"
+              className={`${button} filter hover:saturate-150 transition-all duration-75`}
+            >
+              Sobre Mí
+            </Link>
           </div>
         </div>
         <div className="pt-[25px] pl-[1.5em] flex-shrink-0">
@@ -45,27 +51,34 @@ export default function Portada() {
           <p className={`${titulo} text-nowrap mb-2`}>
             MAGA <span className="text-[#ffb340]">DISEÑOS</span>
           </p>
-          <p className={`${catamaran.className} text-[#222222] leading-[1.7em]`}>
+          <p
+            className={`${catamaran.className} text-[#222222] leading-[1.7em]`}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
-            purus mauris. Vestibulum finibus lacus sed ligula dapibus, eu aliquam
-            lacus rutrum. Aenean mattis ante vitae lectus fringilla, id pretium
-            leo porta. Nulla in erat congue, pretium augue ut, fermentum elit. Ut
-            diam orci, porttitor eget facilisis non, fermentum sit amet augue.
-            Nulla eu massa at ligula dictum facilisis. Vestibulum ut lobortis
-            ligula. Suspendisse rutrum sem ante, id efficitur purus volutpat ac.
-            Sed sagittis nec tortor sed volutpat. Sed orci enim, accumsan vitae
-            feugiat non, pellentesque sit amet erat.
+            purus mauris. Vestibulum finibus lacus sed ligula dapibus, eu
+            aliquam lacus rutrum. Aenean mattis ante vitae lectus fringilla, id
+            pretium leo porta. Nulla in erat congue, pretium augue ut, fermentum
+            elit. Ut diam orci, porttitor eget facilisis non, fermentum sit amet
+            augue. Nulla eu massa at ligula dictum facilisis. Vestibulum ut
+            lobortis ligula. Suspendisse rutrum sem ante, id efficitur purus
+            volutpat ac. Sed sagittis nec tortor sed volutpat. Sed orci enim,
+            accumsan vitae feugiat non, pellentesque sit amet erat.
           </p>
         </div>
         <Image
-            src="/stock-photo-portrait-of-young-happy-beautiful-woman-smiling-and-standing-isolated-on-white-background-in-a-warm-2142785465 (1).jpg"
-            alt="Imagen de MAGA"
-            width={1550}
-            height={995}
-            className="w-full"
-          />
+          src="/stock-photo-portrait-of-young-happy-beautiful-woman-smiling-and-standing-isolated-on-white-background-in-a-warm-2142785465 (1).jpg"
+          alt="Imagen de MAGA"
+          width={1550}
+          height={995}
+          className="w-full"
+        />
         <div className="flex justify-center items-center">
-          <button className={button}>Sobre Mí</button>
+          <Link
+            href="/about"
+            className={`${button} filter hover:saturate-150 transition-all duration-75`}
+          >
+            Sobre Mí
+          </Link>
         </div>
       </div>
     </div>
