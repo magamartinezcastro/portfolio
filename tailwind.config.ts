@@ -1,3 +1,4 @@
+import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -5,6 +6,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/spinner.js",
   ],
   theme: {
     extend: {
@@ -25,6 +27,43 @@ const config: Config = {
       '2xl': '1440px'
     }
   },
-  plugins: [],
+  plugins: [nextui({
+    themes: {
+      light: {
+        colors: {
+          primary: {
+            50: "#ffb340",
+            100: "#ffb340",
+            200: "#ffb340",
+            300: "#ffb340",
+            400: "#ffb340",
+            500: "#ffb340",
+            600: "#ffb340",
+            700: "#ffb340",
+            800: "#ffb340",
+            900: "#ffb340",
+            DEFAULT: "#ffb340"
+          }
+        }
+      },
+      dark: {
+        colors: {
+          primary: {
+            50: "#ffb340",
+            100: "#ffb340",
+            200: "#ffb340",
+            300: "#ffb340",
+            400: "#ffb340",
+            500: "#ffb340",
+            600: "#ffb340",
+            700: "#ffb340",
+            800: "#ffb340",
+            900: "#ffb340",
+            DEFAULT: "#ffb340"
+          }
+        }
+      }
+    }
+  })],
 };
 export default config;
