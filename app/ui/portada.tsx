@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { button, container, containerPadding, highlight, titulo } from "../lib/classes";
+import { button, container, containerPadding, highlight, loading, titulo } from "../lib/classes";
 import { catamaran } from "../lib/fonts";
 import { ReactNode, Suspense } from "react";
 import { Spinner } from "@nextui-org/spinner";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 import fotoPortada from "@/public/gabi 8.jpg";
+import fotoPortadaAlt from "@/public/gabi 9.jpg";
 
 export default function Portada() {
   const foto =
@@ -15,6 +16,7 @@ export default function Portada() {
   const width = 6240;
   const height = 4160;
   const estiloFoto = `
+    ${loading}
     w-[140px] h-[176px] sm:w-[145px] sm:h-[211px] md:w-[194px] md:h-[282px]
     lg:w-[250px] lg:h-[364px] xl:w-[303px] xl:h-[441px] 2xl:w-[363px]
     2xl:h-[529px] object-cover`
@@ -46,7 +48,7 @@ export default function Portada() {
                 Mi experiencia laboral tanto a nivel nacional como internacional
                 me ha permitido adquirir habilidades en la gestión de proyectos,
                 ofreciendo soluciones creativas y efectivas con un alto nivel de
-                profesionalismo y atención <br className="hidden sm:max-md:block 2xl:block"/> al detalle.
+                profesionalismo y atención al detalle.
               </p>
             </div>
           </div>
@@ -74,7 +76,7 @@ export default function Portada() {
       <div className={`${container} flex sm:hidden flex-col gap-[20px]`}>
         <div>
           <p className={`${titulo} text-nowrap mb-2`}>
-            MAGA <span className="text-[#ffb340]">DISEÑOS</span>
+            GESTION <span className={highlight}> Y DISEÑO</span>
           </p>
           <div
               className={`${catamaran.className} text-[#222222] leading-[1.7em]`}
@@ -100,13 +102,14 @@ export default function Portada() {
             </div>
         </div>
         <Suspense fallback={<Spinner color="primary" size="lg"/>}>
-          <Image
-            src={fotoPortada.src}
+          <img
+            src={fotoPortadaAlt.src}
             alt={alt}
-            width={fotoPortada.width}
-            height={fotoPortada.height}
-            className="w-full"
+            width={fotoPortadaAlt.width}
+            height={fotoPortadaAlt.height}
+            className={`${loading} w-full`}
           />
+          {/*<img src={fotoPortada.src} alt={alt} className={`${loading} w-full`}/>*/}
         </Suspense>
         <div className="flex justify-center items-center">
           <Link

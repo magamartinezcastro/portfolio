@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { catamaran } from "../lib/fonts";
+import { loading } from "../lib/classes";
 
 export default function Panel({
   image,
@@ -27,7 +28,9 @@ export default function Panel({
         alt={title}
         width={width}
         height={height}
-        className="w-[130px] md:w-[150px] lg:w-[254px] h-[154px] md:h-[175px] lg:h-[213px]"
+        className={`
+        ${loading}
+        w-[130px] md:w-[150px] lg:w-[254px] h-[154px] md:h-[175px] lg:h-[213px]`}
       />
       <div 
         className="px-[9px] lg:px-[16px] py-[11px] flex flex-col gap-[5px]

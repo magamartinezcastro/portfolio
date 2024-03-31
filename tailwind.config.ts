@@ -18,6 +18,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        "skeleton-loading": {
+          '0%': {"background-color": "hsl(0 0% 95%)" },
+          '100%': {"background-color": "hsl(0 0% 80%)"}
+        }
+      }
     },
     screens: {
       'sm': '576px',

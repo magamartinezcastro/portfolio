@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { titulo, textSize, container, hr, containerPadding } from "../lib/classes";
+import { titulo, textSize, container, hr, containerPadding, loading } from "../lib/classes";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { catamaran, inter } from "../lib/fonts";
 import Panel from "./panel";
@@ -24,7 +24,9 @@ function Bicentenario() {
           alt="Ilustracion Museo"
           width={3508}
           height={2349}
-          className="w-full h-auto lg:h-[288px] mx-auto"
+          className={`
+          ${loading}
+          w-full h-auto lg:h-[288px] mx-auto`}
         />
         <p className={`text-[#222222]`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -43,7 +45,9 @@ function Bicentenario() {
           alt="Ilustracion Museo"
           width={3307}
           height={2338}
-          className="w-full h-auto mx-auto"
+          className={`
+          ${loading}
+          w-full h-auto mx-auto`}
         />
         <p className={`text-[#222222]`}>
           Donec et lectus id est sollicitudin laoreet tempus eget dolor. Aenean

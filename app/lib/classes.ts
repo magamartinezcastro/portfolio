@@ -8,7 +8,9 @@ export const container =
 export const containerPadding =
     "px-[35px] xs:px-0";
 export const textSize =
-    "text-[8px] xs:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[20px]"
+    "text-[8px] xs:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[18px]"
 export const hr =
     "bg-[#ffbd59] w-[95px] h-[4px] mt-[4px] md:h-[6px] md:w-[150px] xl:w-[200px]"
 export const highlight = "text-[#ffb340]"
+export const loading = ""
+/*export const loading = "animate-[skeleton-loading_2s_linear_infinite_alternate]";*/

@@ -1,6 +1,6 @@
 "use client";
 
-import Museos from "./ui/museos";
+import Museos from "./ui/museos_nuevo";
 import { textSize } from "./lib/classes";
 import Portada from "./ui/portada";
 import { Trabajos } from "./ui/trabajos";

@@ -26,7 +26,7 @@ export default function Contact() {
     <main
       className={`min-h-screen bg-white text-black flex flex-col ${textSize}`}
     >
-      <div className={`${containerPadding} py-[3.5em]`}>
+      <div className={`${containerPadding} py-[2.5em]`}>
         <div className={container}>
           <p className={`${titulo} ${highlight} mb-[1em]`}>CONTACTO</p>
           <div className={`${catamaran.className} text-[#222222] mb-[3em]`}>
@@ -37,33 +37,33 @@ export default function Contact() {
               magamartinezcastro@gmail.com
             </p>
             <div className="mb-[2em]">
-              Encontrame en las redes sociales
+              Seguime en las redes sociales
               <ul
                 className="px-4 py-2 text-[#0409ff] flex flex-col gap-2 
-                underline underline-offset-2"
+                underline underline-offset-1"
               >
                 <li>
                   <Link href="https://linktr.ee/magamartinezcastro">
                     <FaWix className={redesStyle} />
-                    Maga Estudios
+                    <small>Maga Estudios</small>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.instagram.com/magamartinezcastro/">
                     <FaInstagram className={redesStyle} />
-                    Maga Estudios
+                    <small>Maga Estudios</small>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://linktr.ee/magamartinezcastro">
                     <SiLinktree className={redesStyle} />
-                    Maga Estudios
+                    <small>Maga Estudios</small>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.linkedin.com/in/gabrielamartinezcastro/">
                     <FaLinkedin className={redesStyle} />
-                    Maga Estudios
+                    <small>Maga Estudios</small>
                   </Link>
                 </li>
               </ul>

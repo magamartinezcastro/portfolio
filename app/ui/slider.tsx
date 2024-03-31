@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import arrowForward from "@/public/Assets/arrowForward.svg";
 import arrowForward2 from "@/public/Assets/arrowForward2.svg";
 import useMeasure from "react-use-measure";
+import { loading } from "../lib/classes";
 
 export default function Slider() {
   const height =
@@ -23,9 +24,8 @@ export default function Slider() {
     "2.jpg",
     "3.jpg",
     "4.jpg",
+    "5.jpg",
     "6.jpg",
-    "10.jpg",
-    "12.jpg",
   ];
   const themes = ["light", "light", "dark", "light", "light", "light", "light"];
   const [position, setPosition] = useState(0);
@@ -91,10 +91,10 @@ export default function Slider() {
           <Image
             key={photo}
             alt=""
-            src={`/Slider/${photo}`}
+            src={`/Slider/Nuevo/${photo}`}
             width={5520}
             height={3105}
-            className={`${height} shrink-0 w-full`}
+            className={`${height} ${loading} shrink-0 w-full`}
           />
         ))}
       </div>

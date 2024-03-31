@@ -1,10 +1,11 @@
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import {
   button,
   container,
   containerPadding,
   highlight,
+  loading,
   textSize,
   titulo,
 } from "../lib/classes";
@@ -14,13 +15,12 @@ import foto from "@/public/Gabi bar 39.jpg";
 import Link from "next/link";
 
 export default function About() {
-  const estiloFoto = "w-[900px]";
 
   return (
     <main
-      className={`min-h-screen bg-white text-black flex flex-col ${textSize}`}
+      className={`min-h-screen bg-white text-black flex flex-col ${textSize} leading-[1.75em]`}
     >
-      <div className={`${containerPadding} py-[3.5em]`}>
+      <div className={`${containerPadding} py-[2.5em]`}>
         <div className={container}>
           <p className={`${titulo} mb-[1em]`}>
             UN POCO <span className={highlight}>DE HISTORIA</span>
@@ -41,7 +41,7 @@ export default function About() {
               alt={"Foto de Gabi"}
               width={foto.width}
               height={foto.height}
-              className={`${estiloFoto} mb-[2em]`}
+              className={`${loading} mb-[2em]`}
             />
             <ul className="mb-[1.5em]">
               <li>
