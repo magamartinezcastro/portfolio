@@ -8,13 +8,13 @@ import Image from "next/image";
 
 import { MdOutlineEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
-import { FaFacebook } from "react-icons/fa";
+import { FaBehance, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa";
 import { container } from "./lib/classes";
 import { inter } from "./lib/fonts";
-import { NextUIProvider } from "@nextui-org/system";
+import { SiLinktree } from "react-icons/si";
 
 export default function RootLayout({
   children,
@@ -27,11 +27,21 @@ export default function RootLayout({
     `font-extrabold link hover:text-[#ffbd59] transition-all duration-300 ${
       pathname === href ? active : ""
     }`;
+  const telefono = "(+54) 3465 442000"
+  const links = {
+    "instagram": "https://www.instagram.com/magamartinezcastro/",
+    "linktree": "https://linktr.ee/magamartinezcastro",
+    "linkedin": "www.linkedin.com/in/gabrielamartinezcastro",
+    "behance": "https://www.behance.net/magamartinezcastro",
+    "facebook": "https://www.facebook.com/magamartinezcastro/",
+    "wix": "https://magamartinezcastro.wixsite.com/my-site"
+  }
 
   return (
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MC Diseño</title>
       </head>
       <body
         className={`${inter.className} bg-white min-w-[340px] cursor-default`}
@@ -39,7 +49,7 @@ export default function RootLayout({
         <div className="text-white">
           <div className="px-[39px] text-[8px] md:text-[12px] bg-[#d9d9d9]">
             <div
-              className={`flex justify-between items-center h-[95px] md:h-[112px] ${container}`}
+              className={`flex justify-between items-center h-[95px] md:h-[112px] lg:h-[132px] ${container}`}
             >
               <Link href="/">
                 <Image
@@ -47,7 +57,7 @@ export default function RootLayout({
                   alt="Logo MAGA"
                   width={1313}
                   height={1313}
-                  className={`hover:-rotate-6 transition-all duration-300 w-[80px] md:w-[100px]`}
+                  className={`hover:-rotate-6 transition-all duration-300 w-[80px] md:w-[100px] lg:w-[120px]`}
                 />
               </Link>
               <div
@@ -80,7 +90,7 @@ export default function RootLayout({
                     size="12px"
                     className="hidden md:inline-block"
                   />
-                  3465-442000
+                  {telefono}
                 </div>
               </div>
             </div>
@@ -101,7 +111,9 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        {children}
+        <div className="min-h-screen"> {/* prevent too much layout shift */}
+          {children}
+        </div>
         <div className="bg-[#3d3d3d] px-[39px] py-[20px] md:pt-[40px] text-white">
           <div className={container}>
             <div className="flex flex-wrap justify-between gap-3 text-[8px] md:text-[12px]">
@@ -137,11 +149,11 @@ export default function RootLayout({
                       size="12px"
                       className="hidden md:inline-block"
                     />
-                    3465-442000
+                    {telefono}
                   </div>
                 </div>
                 <div className="flex px-2 gap-2">
-                  <a href="" target="_blank">
+                  <a href={links.facebook} target="_blank">
                     <FaFacebook
                       size="10px"
                       className="md:hidden inline-block"
@@ -151,17 +163,17 @@ export default function RootLayout({
                       className="hidden md:inline-block"
                     />
                   </a>
-                  <a href="" target="_blank">
-                    <FaXTwitter
+                  <a href={links.linktree} target="_blank">
+                    <SiLinktree
                       size="10px"
                       className="md:hidden inline-block"
                     />
-                    <FaXTwitter
+                    <SiLinktree
                       size="12px"
                       className="hidden md:inline-block"
                     />
                   </a>
-                  <a href="" target="_blank">
+                  <a href={links.instagram} target="_blank">
                     <FaInstagram
                       size="10px"
                       className="md:hidden inline-block"
@@ -171,12 +183,22 @@ export default function RootLayout({
                       className="hidden md:inline-block"
                     />
                   </a>
-                  <a href="" target="_blank">
-                    <FaPinterest
+                  <a href={links.linkedin} target="_blank">
+                    <FaLinkedin
                       size="10px"
                       className="md:hidden inline-block"
                     />
-                    <FaPinterest
+                    <FaLinkedin
+                      size="12px"
+                      className="hidden md:inline-block"
+                    />
+                  </a>
+                  <a href={links.behance} target="_blank">
+                    <FaBehance
+                      size="10px"
+                      className="md:hidden inline-block"
+                    />
+                    <FaBehance
                       size="12px"
                       className="hidden md:inline-block"
                     />
@@ -241,7 +263,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="text-[6px] md:text-[10px] text-right">
-              <p>Made with Figma</p>
+              <p>Made with NextJS</p>
               <p>gastonmartinezcastro@gmail.com</p>
             </div>
           </div>

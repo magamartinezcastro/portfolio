@@ -8,8 +8,6 @@ import {
 import half1 from "@/public/Assets/half1.svg";
 import half2 from "@/public/Assets/half2.svg";
 import bg from "@/public/Assets/bg.svg";
-import useMeasure from "react-use-measure";
-import { useWindowWidth } from "@react-hook/window-size";
 
 export default function Slider() {
   const height =

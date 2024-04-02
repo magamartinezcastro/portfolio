@@ -1,13 +1,13 @@
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 
 import arrowForward from "@/public/Assets/arrowForward.svg";
 import arrowForward2 from "@/public/Assets/arrowForward2.svg";
 import useMeasure from "react-use-measure";
-import { loading } from "../lib/classes";
 
 export default function Slider() {
-  const height =
+  const height = "h-auto max-h-[90vh]"
+  const height2 =
     "h-[311px] sm:h-[332px] md:h-[403px] lg:h-[485px] xl:h-[562px] 2xl:h-[651px]";
   const height1 =
     "h-[191px] sm:h-[212px] md:h-[283px] lg:h-[365px] xl:h-[442px] 2xl:h-[531px]";
@@ -20,14 +20,16 @@ export default function Slider() {
     marginTop: `-${Math.round(height / 2)}px`,
   });
   const photos = [
-    "1.jpg",
-    "2.jpg",
+    "1.png",
     "3.jpg",
+    "3.png",
     "4.jpg",
-    "5.jpg",
-    "6.jpg",
+    "4.png",
+    "5.png",
+    "6.png",
+    "1.jpg",
   ];
-  const themes = ["light", "light", "dark", "light", "light", "light", "light"];
+  const themes = ["light", "dark", "light", "light", "light", "light", "dark", "light"];
   const [position, setPosition] = useState(0);
   const scrollInterval = useRef<NodeJS.Timeout | null>(null);
   const scrollTime = 3500;
@@ -91,10 +93,10 @@ export default function Slider() {
           <Image
             key={photo}
             alt=""
-            src={`/Slider/Nuevo/${photo}`}
+            src={`/Slider/NuevoNuevo/${photo}`}
             width={5520}
             height={3105}
-            className={`${height} ${loading} shrink-0 w-full`}
+            className={`${height} shrink-0 w-full`}
           />
         ))}
       </div>

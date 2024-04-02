@@ -41,7 +41,7 @@ export default function About() {
               alt={"Foto de Gabi"}
               width={foto.width}
               height={foto.height}
-              className={`${loading} mb-[2em]`}
+              className={`mb-[2em] ${loading}`}
             />
             <ul className="mb-[1.5em]">
               <li>

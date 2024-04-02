@@ -12,5 +12,4 @@ export const textSize =
 export const hr =
     "bg-[#ffbd59] w-[95px] h-[4px] mt-[4px] md:h-[6px] md:w-[150px] xl:w-[200px]"
 export const highlight = "text-[#ffb340]"
-export const loading = ""
-/*export const loading = "animate-[skeleton-loading_2s_linear_infinite_alternate]";*/
+export const loading = "animate-[skeleton-loading_2s_linear_infinite_alternate]";

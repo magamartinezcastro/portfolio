@@ -9,7 +9,7 @@ import {
   titulo,
 } from "../lib/classes";
 import { catamaran } from "../lib/fonts";
-import { FaInstagram, FaPhone } from "react-icons/fa";
+import { FaBehance, FaInstagram, FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -21,6 +21,14 @@ import { FaWix } from "react-icons/fa";
 export default function Contact() {
   const redesStyle = "inline mt-[-0.2em] mr-[0.3em] text-[1.5em]";
   const inputStyle = "bg-[#eeeeee] rounded-[5px] px-4 py-2";
+  const links = {
+    "instagram": "https://www.instagram.com/magamartinezcastro/",
+    "linktree": "https://linktr.ee/magamartinezcastro",
+    "linkedin": "www.linkedin.com/in/gabrielamartinezcastro",
+    "behance": "https://www.behance.net/magamartinezcastro",
+    "facebook": "https://www.facebook.com/magamartinezcastro/",
+    "wix": "https://magamartinezcastro.wixsite.com/my-site"
+  }
 
   return (
     <main
@@ -43,28 +51,34 @@ export default function Contact() {
                 underline underline-offset-1"
               >
                 <li>
-                  <Link href="https://linktr.ee/magamartinezcastro">
-                    <FaWix className={redesStyle} />
-                    <small>Maga Estudios</small>
-                  </Link>
+                  <a href={links.facebook} target="_blank">
+                    <FaFacebook className={redesStyle} />
+                    <small>Facebook</small>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://www.instagram.com/magamartinezcastro/">
-                    <FaInstagram className={redesStyle} />
-                    <small>Maga Estudios</small>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://linktr.ee/magamartinezcastro">
+                  <a href={links.linktree} target="_blank">
                     <SiLinktree className={redesStyle} />
-                    <small>Maga Estudios</small>
-                  </Link>
+                    <small>Linktree</small>
+                  </a>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/in/gabrielamartinezcastro/">
+                  <a href={links.instagram} target="_blank">
+                    <FaInstagram className={redesStyle} />
+                    <small>Instagram</small>
+                  </a>
+                </li>
+                <li>
+                  <a href={links.linkedin} target="_blank">
                     <FaLinkedin className={redesStyle} />
-                    <small>Maga Estudios</small>
-                  </Link>
+                    <small>LinkedIn</small>
+                  </a>
+                </li>
+                <li>
+                  <a href={links.behance} target="_blank">
+                    <FaBehance className={redesStyle} />
+                    <small>Behance</small>
+                  </a>
                 </li>
               </ul>
             </div>

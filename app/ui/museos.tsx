@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { MutableRefObject, RefObject, useEffect, useRef } from "react";
-import { container, containerPadding, hr, loading, titulo } from "../lib/classes";
+import { container, containerPadding, hr, titulo } from "../lib/classes";
 import { catamaran } from "../lib/fonts";
 
 export default function Museos() {
@@ -78,8 +78,7 @@ export default function Museos() {
             width={1500}
             height={996}
             alt="Obras expuestas en museo"
-            className={`
-              ${loading}
+            className="
               ml-[12px] md:ml-[40px] mt-[32px]
               w-[120px] h-[179px]
               xs:w-[120px] xs:h-[220px]
@@ -87,7 +86,7 @@ export default function Museos() {
               md:w-[255px] md:h-[276px]
               lg:w-[330px] lg:h-[357px]
               xl:w-[399px] xl:h-[432px]
-              2xl:w-[479px] 2xl:h-[518px]`}
+              2xl:w-[479px] 2xl:h-[518px]"
           />
         </div>
       </div>
@@ -104,9 +103,8 @@ export default function Museos() {
             width={1500}
             height={996}
             alt="Obras expuestas en museo"
-            className={`
-            ${loading}
-            mt-[18px] w-auto h-[200px] mx-auto`}
+            className="
+            mt-[18px] w-auto h-[200px] mx-auto"
           />
 
           <p
