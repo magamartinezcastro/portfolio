@@ -35,7 +35,7 @@ function DetailsModal(data: any) {
           alt={titulo}
           width={imagen.width}
           height={imagen.height}
-          className="w-auto max-h-[50vh] mx-auto"
+          className="w-auto max-h-[50vh] mx-auto" 
         />
         <p className={`text-[#222222]`}>{extDesc}</p>
       </div>
