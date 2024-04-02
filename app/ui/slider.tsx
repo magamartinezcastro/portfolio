@@ -5,6 +5,15 @@ import arrowForward from "@/public/Assets/arrowForward.svg";
 import arrowForward2 from "@/public/Assets/arrowForward2.svg";
 import useMeasure from "react-use-measure";
 
+import Foto1 from "@/public/Slider/NuevoNuevo/1.png";
+import Foto2 from "@/public/Slider/NuevoNuevo/3.jpg";
+import Foto3 from "@/public/Slider/NuevoNuevo/3.png";
+import Foto4 from "@/public/Slider/NuevoNuevo/4.jpg";
+import Foto5 from "@/public/Slider/NuevoNuevo/4.png";
+import Foto6 from "@/public/Slider/NuevoNuevo/5.png";
+import Foto7 from "@/public/Slider/NuevoNuevo/6.png";
+import Foto8 from "@/public/Slider/NuevoNuevo/1.jpg";
+
 export default function Slider() {
   const height = "h-auto max-h-[90vh]"
   const height2 =
@@ -20,14 +29,14 @@ export default function Slider() {
     marginTop: `-${Math.round(height / 2)}px`,
   });
   const photos = [
-    "1.png",
-    "3.jpg",
-    "3.png",
-    "4.jpg",
-    "4.png",
-    "5.png",
-    "6.png",
-    "1.jpg",
+    Foto1,
+    Foto2,
+    Foto3,
+    Foto4,
+    Foto5,
+    Foto6,
+    Foto7,
+    Foto8,
   ];
   const themes = ["light", "dark", "light", "light", "light", "light", "dark", "light"];
   const [position, setPosition] = useState(0);
@@ -89,11 +98,11 @@ export default function Slider() {
         className="flex w-full z-0 relative transition-all duration-1000 ease-in"
         style={{ marginLeft: `-${position * 100}%` }}
       >
-        {photos.map((photo) => (
+        {photos.map((photo, index) => (
           <Image
-            key={photo}
+            key={`foto${index+1}`}
             alt=""
-            src={`/Slider/NuevoNuevo/${photo}`}
+            src={`/Slider/NuevoNuevo/${photo.src}`}
             width={5520}
             height={3105}
             className={`${height} shrink-0 w-full`}

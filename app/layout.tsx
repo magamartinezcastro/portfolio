@@ -15,6 +15,7 @@ import { FaPinterest } from "react-icons/fa";
 import { container } from "./lib/classes";
 import { inter } from "./lib/fonts";
 import { SiLinktree } from "react-icons/si";
+import logo from "@/public/logo_v2.png";
 
 export default function RootLayout({
   children,
@@ -53,7 +54,7 @@ export default function RootLayout({
             >
               <Link href="/">
                 <Image
-                  src="/logo_v2.png"
+                  src={logo.src}
                   alt="Logo MAGA"
                   width={1313}
                   height={1313}
