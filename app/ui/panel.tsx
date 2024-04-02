@@ -30,7 +30,7 @@ export default function Panel({
         width={width}
         height={height}
         className="
-        w-[130px] md:w-[150px] lg:w-[254px] h-[154px] md:h-[175px] lg:h-[213px]"
+        w-[130px] md:w-[150px] lg:w-[254px] h-[109px] md:h-[125px] lg:h-[213px]"
         loading="lazy"
       />
       <div 

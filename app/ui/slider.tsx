@@ -5,13 +5,13 @@ import arrowForward from "@/public/Assets/arrowForward.svg";
 import arrowForward2 from "@/public/Assets/arrowForward2.svg";
 import useMeasure from "react-use-measure";
 
-import Foto1 from "@/public/Slider/NuevoNuevo/1.jpg";
-import Foto2 from "@/public/Slider/NuevoNuevo/3.jpg";
+import Foto1 from "@/public/Slider/NuevoNuevo/1.webp";
+import Foto2 from "@/public/Slider/NuevoNuevo/2.webp";
 import Foto3 from "@/public/Slider/NuevoNuevo/3.webp";
-import Foto4 from "@/public/Slider/NuevoNuevo/4.jpg";
-import Foto5 from "@/public/Slider/NuevoNuevo/4.png";
-import Foto6 from "@/public/Slider/NuevoNuevo/5.png";
-import Foto7 from "@/public/Slider/NuevoNuevo/6.png";
+import Foto4 from "@/public/Slider/NuevoNuevo/4.webp";
+import Foto5 from "@/public/Slider/NuevoNuevo/5.webp";
+import Foto6 from "@/public/Slider/NuevoNuevo/6.webp";
+import Foto7 from "@/public/Slider/NuevoNuevo/7.webp";
 import Foto8 from "@/public/Slider/NuevoNuevo/11.webp";
 import { loading } from "../lib/classes";
 

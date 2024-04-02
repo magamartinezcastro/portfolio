@@ -29,18 +29,18 @@ export default function Museos() {
             loading="lazy"
           />
           <p className={`${inter.className} mb-[1em] text-[1.5em] font-bold`}>
-            Estación de Ferrocarril Chabás
+            Diseño de exposiciones culturales y comerciales
           </p>
           <p className="leading-[1.75em] text-[#222222]">
-            La Estación de Ferrocarril del antiguo Ferrocarril del Oeste
-            Santafesino, un edificio histórico de estilo inglés recién
-            restaurado, marca el inicio del poblado. Situada en el corazón de la
-            ciudad, simboliza su origen. Está rodeada por el Playón, un área
-            verde que incluye el Galpón del Pueblo (un espacio de usos
-            múltiples), el Parque 12 de Octubre y un circuito deportivo
-            municipal. El Museo de Firmat, otro espacio cultural municipal,
-            exhibe una colección de objetos ferroviarios que solían animar la
-            estación.
+            El diseño integral de una exposición considera al espacio como un
+            medio de comunicación en donde integrar recursos, según sea el tema
+            a exhibir. He realizado diversos proyectos, formando parte de
+            equipos de trabajo, coordinando conceptos, instalaciones y montajes.
+            Se requiere un conocimiento 360 del tema, los objetos y el espacio,
+            reuniendo los recursos y el equipo, para realizar documentación,
+            relato, iluminación y consideraciones de conservación del
+            patrimonio, estética integral, colorimetría y gráfica aplicada a la
+            señalética. Publicidad y marketing.
           </p>
         </div>
 
@@ -55,7 +55,9 @@ export default function Museos() {
               loading="lazy"
             />
             <b className="text-[1.25em]">Museo Histórico de los Quirquinchos</b>
-            <p className="text-[#222222]">Museo Histórico de los Quirquinchos &quot;Mi Patria Chica&quot;</p>
+            <p className="text-[#222222]">
+              Museo Histórico de los Quirquinchos &quot;Mi Patria Chica&quot;
+            </p>
           </div>
           <div className="text-center sm:w-1/3 w-[45%]">
             <img
@@ -66,8 +68,10 @@ export default function Museos() {
               className={imgStyle}
               loading="lazy"
             />
-            <b className="text-[1.25em]">Antiguo Ferrocarril Estación Firmat</b>
-            <p className="text-[#222222]">Antiguo Ferrocarril del Oeste Santafesino</p>
+            <b className="text-[1.25em]">Ferrocarril Estación Firmat</b>
+            <p className="text-[#222222]">
+              Ferrocarril del Oeste Santafesino
+            </p>
           </div>
           <div className="text-center sm:w-1/3 w-[45%]">
             <img
@@ -79,7 +83,9 @@ export default function Museos() {
               loading="lazy"
             />
             <b className="text-[1.25em]">Museo Municipalidad de Firmat</b>
-            <p className="text-[#222222]">Muestra Museo Municipalidad de Firmat</p>
+            <p className="text-[#222222]">
+              Muestra Museo Municipalidad de Firmat
+            </p>
           </div>
         </div>
       </div>
