@@ -102,7 +102,7 @@ export default function Slider() {
           <Image
             key={`foto${index+1}`}
             alt=""
-            src={`/Slider/NuevoNuevo/${photo.src}`}
+            src={photo.src}
             width={5520}
             height={3105}
             className={`${height} shrink-0 w-full`}
