@@ -5,7 +5,7 @@ import arrowForward from "@/public/Assets/arrowForward.svg";
 import arrowForward2 from "@/public/Assets/arrowForward2.svg";
 import useMeasure from "react-use-measure";
 
-import Foto1 from "@/public/Slider/NuevoNuevo/1.webp";
+import Foto1 from "@/public/Slider/NuevoNuevo/1.jpg";
 import Foto2 from "@/public/Slider/NuevoNuevo/3.jpg";
 import Foto3 from "@/public/Slider/NuevoNuevo/3.webp";
 import Foto4 from "@/public/Slider/NuevoNuevo/4.jpg";
