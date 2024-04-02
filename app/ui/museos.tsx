@@ -73,7 +73,7 @@ export default function Museos() {
               finalWidth={479}
               finalHeight={518}
             />*/}
-          <Image
+          <img
             src="/stock-photo-art-appreciators-view-paintings-in-museum-de-prado-prado-museum-madrid-spain-264032927.jpg"
             width={1500}
             height={996}
@@ -98,7 +98,7 @@ export default function Museos() {
             </p>
             <hr className={`${hr} ml-[19px] sm:ml-0`} />
           </div>
-          <Image
+          <img
             src="/stock-photo-art-appreciators-view-paintings-in-museum-de-prado-prado-museum-madrid-spain-264032927.jpg"
             width={1500}
             height={996}

@@ -53,11 +53,11 @@ export default function RootLayout({
               className={`flex justify-between items-center h-[95px] md:h-[112px] lg:h-[132px] ${container}`}
             >
               <Link href="/">
-                <Image
+                <img
                   src={logo.src}
                   alt="Logo MAGA"
-                  width={1313}
-                  height={1313}
+                  width={logo.width}
+                  height={logo.height}
                   className={`hover:-rotate-6 transition-all duration-300 w-[80px] md:w-[100px] lg:w-[120px]`}
                 />
               </Link>

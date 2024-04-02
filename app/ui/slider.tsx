@@ -5,14 +5,14 @@ import arrowForward from "@/public/Assets/arrowForward.svg";
 import arrowForward2 from "@/public/Assets/arrowForward2.svg";
 import useMeasure from "react-use-measure";
 
-import Foto1 from "@/public/Slider/NuevoNuevo/1.png";
+import Foto1 from "@/public/Slider/NuevoNuevo/1.webp";
 import Foto2 from "@/public/Slider/NuevoNuevo/3.jpg";
-import Foto3 from "@/public/Slider/NuevoNuevo/3.png";
+import Foto3 from "@/public/Slider/NuevoNuevo/3.webp";
 import Foto4 from "@/public/Slider/NuevoNuevo/4.jpg";
 import Foto5 from "@/public/Slider/NuevoNuevo/4.png";
 import Foto6 from "@/public/Slider/NuevoNuevo/5.png";
 import Foto7 from "@/public/Slider/NuevoNuevo/6.png";
-import Foto8 from "@/public/Slider/NuevoNuevo/1.jpg";
+import Foto8 from "@/public/Slider/NuevoNuevo/11.webp";
 
 export default function Slider() {
   const height = "h-auto max-h-[90vh]"
@@ -99,7 +99,7 @@ export default function Slider() {
         style={{ marginLeft: `-${position * 100}%` }}
       >
         {photos.map((photo, index) => (
-          <Image
+          <img
             key={`foto${index+1}`}
             alt=""
             src={photo.src}
@@ -120,7 +120,7 @@ export default function Slider() {
         )}
       >
         <button onClick={scrollBackward} className="relative">
-          <Image
+          <img
             src={
               themes[position] == "dark" ? arrowForward.src : arrowForward2.src
             }
@@ -142,7 +142,7 @@ export default function Slider() {
         )}
       >
         <button onClick={scrollForward} className="relative">
-          <Image
+          <img
             src={
               themes[position] == "dark" ? arrowForward.src : arrowForward2.src
             }

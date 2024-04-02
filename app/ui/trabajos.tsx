@@ -30,7 +30,7 @@ function DetailsModal(data: any) {
         >
           {data.title}
         </p>
-        <Image
+        <img
           src={imagen.src}
           alt={titulo}
           width={imagen.width}

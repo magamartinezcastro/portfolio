@@ -24,7 +24,7 @@ export default function Panel({
       className={`${className} max-w-[130px] md:max-w-[150px] lg:max-w-[254px] hover:translate-y-[-7px] transition-transform duration-300`}
       {...props}
     >
-      <Image
+      <img
         src={image}
         alt={title}
         width={width}

@@ -3,12 +3,10 @@ import Link from "next/link";
 import { button, container, containerPadding, highlight, loading, titulo } from "../lib/classes";
 import { catamaran } from "../lib/fonts";
 
-import fotoPortada from "@/public/gabi 8.jpg";
-import fotoPortadaAlt from "@/public/gabi 9.jpg";
+import fotoPortada from "@/public/gabi 8.webp";
+import fotoPortadaAlt from "@/public/gabi 9.webp";
 
 export default function Portada() {
-  const foto =
-    "/Gabi bar 1.jpg";
   const alt = "Foto de MAGA";
   const width = 6240;
   const height = 4160;
@@ -58,7 +56,7 @@ export default function Portada() {
           </div>
         </div>
         <div className="pt-[25px] pl-[1.5em] flex-shrink-0">
-          <Image
+          <img
             src={fotoPortada.src}
             alt={alt}
             width={fotoPortada.width}
@@ -95,7 +93,7 @@ export default function Portada() {
               </p>
             </div>
         </div>
-        <Image
+        <img
           src={fotoPortadaAlt.src}
           alt={alt}
           width={fotoPortadaAlt.width}

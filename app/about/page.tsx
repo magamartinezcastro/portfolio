@@ -11,7 +11,7 @@ import {
 } from "../lib/classes";
 import { catamaran } from "../lib/fonts";
 
-import foto from "@/public/Gabi bar 39.jpg";
+import foto from "@/public/gabiBar.jpg";
 import Link from "next/link";
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
               marca hasta las aplicaciones digitales, impresas y espaciales para
               cultura y comercio.
             </p>
-            <Image
+            <img
               src={foto.src}
               alt={"Foto de Gabi"}
               width={foto.width}

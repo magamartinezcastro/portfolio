@@ -71,7 +71,7 @@ export default function Slider() {
         style={{marginLeft: `-${position * 100}%`}}
       >
         {photos.map((photo) => (
-          <Image
+          <img
             key={photo}
             alt=""
             src={`/Slider/${photo}`}

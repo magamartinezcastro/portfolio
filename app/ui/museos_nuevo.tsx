@@ -4,7 +4,7 @@ import { container, containerPadding, hr, titulo } from "../lib/classes";
 import Img1 from "@/public/museoQuirquinchos.jpg";
 import Img2 from "@/public/ferrocarril.jpg";
 import Img3 from "@/public/museoMuni.jpg";
-import principal from "@/public/museo_principal.png";
+import principal from "@/public/museo_principal.jpg";
 import { catamaran, inter } from "../lib/fonts";
 
 export default function Museos() {
@@ -20,7 +20,7 @@ export default function Museos() {
         </div>
 
         <div className="mb-[3em] sm:mb-[3.8em]">
-          <Image
+          <img
             src={principal.src}
             alt=""
             width={principal.width}
@@ -45,7 +45,7 @@ export default function Museos() {
 
         <div className="flex justify-around flex-wrap sm:flex-nowrap gap-y-[4em] sm:gap-[1.2em] text-[0.75em] sm:text-[0.6em] mb-[2em]">
           <div className="text-center sm:w-1/3 w-[45%]">
-            <Image
+            <img
               src={Img1.src}
               alt=""
               width={Img1.width}
@@ -56,7 +56,7 @@ export default function Museos() {
             <p className="text-[#222222]">Museo Histórico de los Quirquinchos &quot;Mi Patria Chica&quot;</p>
           </div>
           <div className="text-center sm:w-1/3 w-[45%]">
-            <Image
+            <img
               src={Img2.src}
               alt=""
               width={Img2.width}
@@ -67,7 +67,7 @@ export default function Museos() {
             <p className="text-[#222222]">Antiguo Ferrocarril del Oeste Santafesino</p>
           </div>
           <div className="text-center sm:w-1/3 w-[45%]">
-            <Image
+            <img
               src={Img3.src}
               alt=""
               width={Img3.width}
