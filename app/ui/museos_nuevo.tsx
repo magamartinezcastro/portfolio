@@ -53,7 +53,7 @@ export default function Museos() {
               className={imgStyle}
             />
             <b className="text-[1.25em]">Museo Histórico de los Quirquinchos</b>
-            <p className="text-[#222222]">Museo Histórico de los Quirquinchos &quot;Mi Patria Chica&ldquot;</p>
+            <p className="text-[#222222]">Museo Histórico de los Quirquinchos &quot;Mi Patria Chica&quot;</p>
           </div>
           <div className="text-center sm:w-1/3 w-[45%]">
             <Image

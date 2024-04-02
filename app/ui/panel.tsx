@@ -7,6 +7,7 @@ export default function Panel({
   height,
   title,
   summary,
+  className,
   ...props
 }: {
   image: string;
@@ -14,12 +15,13 @@ export default function Panel({
   height: number;
   title: string;
   summary: string;
+  className: string;
   onClick?: any;
 }) {
   return (
     <div
       style={{ boxShadow: "0px 4px 8px 0px rgba(0, 0, 0, .5)" }}
-      className="max-w-[130px] md:max-w-[150px] lg:max-w-[254px] hover:translate-y-[-7px] transition-transform duration-300"
+      className={`${className} max-w-[130px] md:max-w-[150px] lg:max-w-[254px] hover:translate-y-[-7px] transition-transform duration-300`}
       {...props}
     >
       <Image

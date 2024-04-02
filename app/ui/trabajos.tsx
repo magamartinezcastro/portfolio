@@ -26,7 +26,7 @@ function DetailsModal(data: any) {
         className={`w-[219px] sm:w-[250px] md:w-[350px] lg:w-[490px] xl:w-[700px] ${textSize} ${catamaran.className} mx-auto flex flex-col gap-[21px] xl:gap-[40px] py-[30px] xl:py-[40px]`}
       >
         <p
-          className={`${titulo} text-[1.7em] ${highlight} text-center ${inter.className} leading-[44px]`}
+          className={`${titulo} text-[1.7em] ${highlight} text-center ${inter.className}`}
         >
           {data.title}
         </p>
@@ -87,7 +87,7 @@ export function Trabajos() {
 
         <div className="mb-[40px] transition-all duration-1000 relative">
           {/*<div className="flex flex-wrap items-center justify-around mt-[20px] md:mt-[39px] gap-[8px] gap-y-[15px] lg:gap-[30px] lg:gap-y-[30px]">*/}
-          <div className="grid grid-cols-2 sm:grid-cols-3 justify-items-center mt-[20px] md:mt-[39px] gap-[8px] gap-y-[15px] lg:gap-[30px] lg:gap-y-[30px]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 justify-items-center last:cols-span-2 sm:last:col-span-1 mt-[20px] md:mt-[39px] gap-[8px] gap-y-[15px] lg:gap-[30px] lg:gap-y-[30px]">
             {trabajos.map((data) => {
               const imagen = data.image;
               const titulo = data.title;
@@ -101,6 +101,7 @@ export function Trabajos() {
                   title={titulo}
                   summary={desc}
                   onClick={() => openModal(data)}
+                  className="last:cols-span-2 sm:last:col-span-1"
                 />
               );
             })}
