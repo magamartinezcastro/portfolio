@@ -13,6 +13,7 @@ import Foto5 from "@/public/Slider/NuevoNuevo/4.png";
 import Foto6 from "@/public/Slider/NuevoNuevo/5.png";
 import Foto7 from "@/public/Slider/NuevoNuevo/6.png";
 import Foto8 from "@/public/Slider/NuevoNuevo/11.webp";
+import { loading } from "../lib/classes";
 
 export default function Slider() {
   const height = "h-auto max-h-[90vh]"
@@ -105,7 +106,8 @@ export default function Slider() {
             src={photo.src}
             width={5520}
             height={3105}
-            className={`${height} shrink-0 w-full`}
+            className={`${height} ${loading} shrink-0 w-full`}
+            loading={index <= 2 ? "eager" : "lazy"}
           />
         ))}
       </div>

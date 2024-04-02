@@ -31,6 +31,7 @@ export default function Panel({
         height={height}
         className="
         w-[130px] md:w-[150px] lg:w-[254px] h-[154px] md:h-[175px] lg:h-[213px]"
+        loading="lazy"
       />
       <div 
         className="px-[9px] lg:px-[16px] py-[11px] flex flex-col gap-[5px]

@@ -26,6 +26,7 @@ export default function Museos() {
             width={principal.width}
             height={principal.height}
             className="w-full mb-[2.3em]"
+            loading="lazy"
           />
           <p className={`${inter.className} mb-[1em] text-[1.5em] font-bold`}>
             Estación de Ferrocarril Chabás
@@ -51,6 +52,7 @@ export default function Museos() {
               width={Img1.width}
               height={Img1.height}
               className={imgStyle}
+              loading="lazy"
             />
             <b className="text-[1.25em]">Museo Histórico de los Quirquinchos</b>
             <p className="text-[#222222]">Museo Histórico de los Quirquinchos &quot;Mi Patria Chica&quot;</p>
@@ -62,6 +64,7 @@ export default function Museos() {
               width={Img2.width}
               height={Img2.height}
               className={imgStyle}
+              loading="lazy"
             />
             <b className="text-[1.25em]">Antiguo Ferrocarril Estación Firmat</b>
             <p className="text-[#222222]">Antiguo Ferrocarril del Oeste Santafesino</p>
@@ -73,6 +76,7 @@ export default function Museos() {
               width={Img3.width}
               height={Img3.height}
               className={imgStyle}
+              loading="lazy"
             />
             <b className="text-[1.25em]">Museo Municipalidad de Firmat</b>
             <p className="text-[#222222]">Muestra Museo Municipalidad de Firmat</p>
