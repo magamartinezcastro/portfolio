@@ -69,6 +69,9 @@ export function Trabajos() {
                 onCancel={closeModal}
                 onOk={closeModal}
                 footer={null}
+                className={
+                  whichModal !== index ? "absolute inset-0 opacity-0" : ""
+                }
                 width={
                   width <= 576
                     ? 300
