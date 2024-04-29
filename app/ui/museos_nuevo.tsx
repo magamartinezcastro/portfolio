@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { container, containerPadding, hr, titulo } from "../lib/classes";
+import { container, containerPadding, highlight, hr, titulo } from "../lib/classes";
 
 import Img1 from "@/public/museoQuirquinchos.jpg";
 import Img2 from "@/public/ferrocarril.jpg";
@@ -14,9 +14,10 @@ export default function Museos() {
   return (
     <div className={`${containerPadding} text-[#222222]`}>
       <div className={`${container} ${catamaran.className}`}>
-        <div className="flex flex-col items-center mb-[2em]">
-          <p className={titulo}>ARTE Y MUSEOS</p>
-          <hr className={hr} />
+        <div className="flex flex-col mb-[2em]">
+          <p className={titulo}>
+            ARTE Y <span className={highlight}>MUSEOS</span>
+          </p>
         </div>
 
         <div className="mb-[3em] sm:mb-[3.8em]">
@@ -69,9 +70,7 @@ export default function Museos() {
               loading="lazy"
             />
             <b className="text-[1.25em]">Ferrocarril Estación Firmat</b>
-            <p className="text-[#222222]">
-              Ferrocarril del Oeste Santafesino
-            </p>
+            <p className="text-[#222222]">Ferrocarril del Oeste Santafesino</p>
           </div>
           <div className="text-center sm:w-1/3 w-[45%]">
             <img
@@ -83,9 +82,7 @@ export default function Museos() {
               loading="lazy"
             />
             <b className="text-[1.25em]">Museo Municipalidad de Firmat</b>
-            <p className="text-[#222222]">
-              Muestra Museo Municipalidad de Firmat
-            </p>
+            <p className="text-[#222222]">Exposición Museo Paleontológico</p>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import React from "react";
 import {
@@ -17,6 +19,7 @@ import { SiLinktree } from "react-icons/si";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWix } from "react-icons/fa";
+import { sendContactForm } from '../lib/ops';
 
 export default function Contact() {
   const redesStyle = "inline mt-[-0.2em] mr-[0.3em] text-[1.5em]";
@@ -29,7 +32,7 @@ export default function Contact() {
     "facebook": "https://www.facebook.com/magamartinezcastro/",
     "wix": "https://magamartinezcastro.wixsite.com/my-site"
   }
-
+  
   return (
     <main
       className={`min-h-screen bg-white text-black flex flex-col ${textSize}`}
@@ -85,16 +88,35 @@ export default function Contact() {
             <div className="mb-[3em]">
               Completa el siguiente formulario para dejarme un mensaje o tu
               consulta
-              <form className="flex flex-col gap-4 w-[50%] min-w-[300px] mt-2">
-                <input className={inputStyle} placeholder="Nombre"></input>
+              <form
+                onSubmit={sendContactForm("contactForm")}
+                id="contactForm"
+                className="flex flex-col gap-4 w-[50%] min-w-[300px] mt-2"
+              >
+                <input
+                  className={inputStyle}
+                  placeholder="Nombre"
+                  type="text"
+                  name="Nombre"
+                  required
+                ></input>
                 <input
                   className={inputStyle}
                   placeholder="Dirección de correo electrónico"
+                  type="email"
+                  name="Correo"
                 ></input>
-                <input className={inputStyle} placeholder="Telefono"></input>
+                <input
+                  className={inputStyle}
+                  placeholder="Telefono"
+                  type="tel"
+                  name="Telefono"
+                ></input>
                 <textarea
                   className={`${inputStyle} min-h-[150px]`}
                   placeholder="Mensaje..."
+                  name="Mensaje"
+                  required
                 ></textarea>
                 <div className="flex justify-end">
                   <button className="bg-[#cacaca] text-[0.7em] px-4 py-2 rounded-[5px] w-fit">

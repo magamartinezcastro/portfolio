@@ -16,6 +16,7 @@ import { container } from "./lib/classes";
 import { inter } from "./lib/fonts";
 import { SiLinktree } from "react-icons/si";
 import logo from "@/public/logo_v2.png";
+import { sendContactForm } from "./lib/ops";
 
 export default function RootLayout({
   children,
@@ -112,7 +113,9 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        <div className="min-h-screen"> {/* prevent too much layout shift */}
+        <div className="min-h-screen">
+          {" "}
+          {/* prevent too much layout shift */}
           {children}
         </div>
         <div className="bg-[#3d3d3d] px-[39px] py-[20px] md:pt-[40px] text-white">
@@ -195,39 +198,43 @@ export default function RootLayout({
                     />
                   </a>
                   <a href={links.behance} target="_blank">
-                    <FaBehance
-                      size="10px"
-                      className="md:hidden inline-block"
-                    />
-                    <FaBehance
-                      size="12px"
-                      className="hidden md:inline-block"
-                    />
+                    <FaBehance size="10px" className="md:hidden inline-block" />
+                    <FaBehance size="12px" className="hidden md:inline-block" />
                   </a>
                 </div>
                 <div className="hidden md:flex flex-col gap-2 mt-1 text-black">
                   <p className="text-white">
                     O bien completa el siguiente formulario
                   </p>
-                  <form className="flex flex-col gap-2">
+                  <form
+                    id="footerContactForm"
+                    onSubmit={sendContactForm("footerContactForm")}
+                    className="flex flex-col gap-2"
+                  >
                     <input
                       className="bg-[#eeeeee] px-2 py-1 rounded-[5px]"
                       type="text"
                       placeholder="Nombre"
+                      name="Nombre"
+                      required
                     ></input>
                     <input
                       className="bg-[#eeeeee] px-2 py-1 rounded-[5px]"
-                      type="text"
+                      type="email"
                       placeholder="Direccion de correo electronico"
+                      name="Correo"
                     ></input>
                     <input
                       className="bg-[#eeeeee] px-2 py-1 rounded-[5px]"
-                      type="text"
-                      placeholder="Asunto"
+                      type="tel"
+                      placeholder="Telefono"
+                      name="Telefono"
                     ></input>
                     <textarea
                       className="bg-[#eeeeee] h-[108px] px-2 py-1 rounded-[5px] align-top"
                       placeholder="Mensaje..."
+                      name="Mensaje"
+                      required
                     ></textarea>
                     <div className="flex justify-end">
                       <button className="px-2 py-1 bg-[#cacaca] text-[6px] rounded-[5px] md:text-[8px]">

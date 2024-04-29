@@ -35,9 +35,9 @@ export default function Panel({
       />
       <div 
         className="px-[9px] lg:px-[16px] py-[11px] flex flex-col gap-[5px]
-        text-[7px] md:text-[8px] lg:text-[12px] text-[#222222]"
+        text-[9px] md:text-[10px] lg:text-[14px] text-[#222222]"
       >
-        <p className="text-[#ffa011] text-[8px] md:text-[9px] lg:text-[13px] uppercase font-bold">
+        <p className="text-[#ffa011] text-[10px] md:text-[11px] lg:text-[15px] uppercase font-bold">
           {title}
         </p>
         <p className={`${catamaran.className}`}>{summary}</p>
