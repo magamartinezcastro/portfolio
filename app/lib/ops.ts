@@ -7,8 +7,6 @@ export function sendContactForm(formId: string) {
     $.ajax({
       url: "https://formspree.io/f/mayrvqyd",
       type: "post",
-      crossDomain: true,
-      dataType: "jsonp",
       data: form.serialize(),
     });
     $("input,textarea", `#${formId}`).val('')
