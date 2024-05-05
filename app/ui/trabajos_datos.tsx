@@ -5,7 +5,7 @@ import muni from "@/public/Trabajos/Nuevo/muni.webp";
 import cef from "@/public/Trabajos/Nuevo/cef.jpg";
 import tolosa from "@/public/Trabajos/Nuevo/tolosa.jpeg";
 import verdi from "@/public/Trabajos/Nuevo/verdi.jpg";
-import sociedadEspanola from "@/public/Trabajos/Nuevo/sociedadEspanolaEditado.png";
+import sociedadEspanola from "@/public/Trabajos/Nuevo/sociedadEspanolaGabi.jpeg";
 import sibiglia from "@/public/Trabajos/Nuevo/sibiglia.jpg";
 
 import modalFirenze from "@/public/Trabajos/Modal/firenze.jpg";
@@ -15,7 +15,6 @@ import modalTolosa from "@/public/Trabajos/Modal/tolosa.jpg";
 import modalVerdi from "@/public/Trabajos/Modal/verdi.jpeg";
 import modalSociedadEspanola from "@/public/Trabajos/Modal/sociedadEspanola.webp";
 import modalSibiglia from "@/public/Trabajos/Modal/sibiglia1.webp";
-
 
 export const trabajos = [
   {
