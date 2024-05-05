@@ -4,7 +4,7 @@ export function sendContactForm(formId: string) {
   return function(e: any) {
     e.preventDefault();
     const form = $(`#${formId}`)
-    $.ajax({
+    $.ajax({ 
       url: "https://formspree.io/f/mayrvqyd",
       type: "post",
       data: form.serialize(),
