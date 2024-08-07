@@ -17,6 +17,7 @@ import { inter } from "./lib/fonts";
 import { SiLinktree } from "react-icons/si";
 import logo from "@/public/logo_v2.png";
 import { sendContactForm } from "./lib/ops";
+import icon from 'favicon.ico'
 
 export default function RootLayout({
   children,
@@ -44,6 +45,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>MC Diseño</title>
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon"/>
       </head>
       <body
         className={`${inter.className} bg-white min-w-[340px] cursor-default`}

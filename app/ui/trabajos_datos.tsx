@@ -1,4 +1,4 @@
-import abra from "@/public/Trabajos/Nuevo/abra.jpg";
+import abra from "@/public/Trabajos/Nuevo/abra.jpeg";
 import firenze from "@/public/Trabajos/Nuevo/firenze.png";
 import piel from "@/public/Trabajos/Nuevo/piel.jpg";
 import muni from "@/public/Trabajos/Nuevo/muni.webp";
@@ -16,6 +16,8 @@ import modalVerdi from "@/public/Trabajos/Modal/verdi.jpeg";
 import modalSociedadEspanola from "@/public/Trabajos/Modal/sociedadEspanola.webp";
 import modalSibiglia from "@/public/Trabajos/Modal/sibiglia1.webp";
 
+
+
 export const trabajos = [
   {
     title: "ABRA",
@@ -24,7 +26,10 @@ export const trabajos = [
     image: abra,
     modalImage: abra,
     extendedDescription:
-      "Desarrollo del Nombre, la marca comercial e Isologotipo para Claudia Salas Martínez. El Grupo Café Martínez desarrolla este proyecto dedicado a las franquicias y la oportunidad de negocios para emprendedoras mujeres. Este proyecto fue desarrollado junto a Verónica Martínez Castro como coach y desarrolladora de concepto. El logo tiene la forma de una semilla de café, líneas de montañas generadoras, venas familiares, camino que se abre en el nombre, de tipografía redonda, cuatro letras que en gama de color que cambia, permite un proceso de crecimiento.",
+    `Desarrollo de la identidad, Marca Comercial e Isologotipo para Claudia Salas Martínez, que en su carácter de Socia Directora de Café Martínez, crea  “abra“, un acompañamiento para emprendedoras mujeres en el negocio de las franquicias de Café Martínez.
+Es un proyecto realizado junto con Verónica Martínez Castro como coach y desarrolladora de concepto. 
+El logo tiene la forma de una semilla de café, líneas de montañas generadoras, venas Familiares, camino que se abre en el nombre, de tipología redonda, cuatro letras que en gama de color cambia, permite un proceso de crecimiento.`
+    //  "Desarrollo del Nombre, la marca comercial e Isologotipo para Claudia Salas Martínez. El Grupo Café Martínez desarrolla este proyecto dedicado a las franquicias y la oportunidad de negocios para emprendedoras mujeres. Este proyecto fue desarrollado junto a Verónica Martínez Castro como coach y desarrolladora de concepto. El logo tiene la forma de una semilla de café, líneas de montañas generadoras, venas familiares, camino que se abre en el nombre, de tipografía redonda, cuatro letras que en gama de color que cambia, permite un proceso de crecimiento.",
   },
   {
     title: "Firenze Casa de Té",
